@@ -100,3 +100,45 @@ body{
 .patrick img{
     border-color: #7541c8;
 }
+
+@media (min-width: 768px){
+
+    .testimonials-container{
+        max-width: 900px;
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: "daniel daniel"
+        "jonathan jeanette"
+        "patrick patrick"
+        "kira kira";
+    }
+
+    .daniel{
+        grid-area: daniel;
+
+    }
+
+    .jonathan{
+        grid-area: jonathan;
+    }
+
+    .jeanette{grid-area: patrick;}
+
+    .kira{grid-area: kira;
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .testimonials-container{
+        max-width: 1110px;
+    
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+
+}
+}
